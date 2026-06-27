@@ -132,8 +132,8 @@ bias_summary <- quant_long %>%
 total_limits <- c(0, 75)
 total_breaks <- seq(0, 75, 25)
 
-extra_limits <- c(-10, 15)
-extra_breaks <- seq(-10, 15, 5)
+extra_limits <- c(-30, 50)
+extra_breaks <- seq(-30, 50, 10)
 
 fill_total <- scale_fill_gradient(
   low = "white",
@@ -162,7 +162,7 @@ fill_extra <- scale_fill_gradient2(
   guide = guide_colorbar(
     title.position = "top",
     title.hjust = 0.5,
-    barheight = unit(5.2, "cm"),
+    barheight = unit(7.2, "cm"),
     barwidth = unit(1.0, "cm"),
     ticks = TRUE
   )
