@@ -52,12 +52,12 @@ calculate_bias <- function(df) {
       # ------------------------------------------------------------
       # B. Additional bias caused by pathogen interaction
       # ------------------------------------------------------------
-      Extra_Bias_X = ((1 - VE) * VE * lambda_flu * (theta - 1)) /
+      Extra_Bias_X = ((1 - VE) * lambda_flu * (theta - 1)) /
         D_O / D_X * 100,
 
       Extra_Bias_O = 0,
 
-      Extra_Bias_Mixed = ((1 - VE) * VE * ratio_XO * lambda_flu * (theta - 1)) /
+      Extra_Bias_Mixed = ((1 - VE) * ratio_XO * lambda_flu * (theta - 1)) /
         D_O / D_mix * 100,
 
       # Facet labels
